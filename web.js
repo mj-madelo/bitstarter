@@ -6,7 +6,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   var j = fs.readFileSync('index.html', 'utf-8');
-  var k = j.toString();
+  console.log(j);
   response.send(j);
 });
 
